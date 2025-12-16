@@ -146,7 +146,6 @@ function mapPokemonDtoToDetails(dto: PokemonDto): PokemonDetails {
 }
 
 function mapSpeciesDto(dto: PokemonSpeciesDto): PokemonSpecies {
-  console.log("DTO Species:", dto);
   const preferred = dto.flavor_text_entries.find((entry) => entry.language.name === "es");
   const fallback = dto.flavor_text_entries.find((entry) => entry.language.name === "en");
   const description = normalizeFlavorText(preferred?.flavor_text ?? fallback?.flavor_text ?? "");

@@ -82,7 +82,6 @@ const safeLoad = async () => {
 };
 
 onMounted(() => {
-  console.log("HomeView mounted, loading pokemons");
   void safeLoad();
 });
 </script>
