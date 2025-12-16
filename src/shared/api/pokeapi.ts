@@ -28,7 +28,3 @@ export async function getEvolutionChain(chainId: number): Promise<EvolutionChain
   return data;
 }
 
-export async function getEvolutionChainByUrl(url: string): Promise<EvolutionChainDto> {
-  const { data } = await http.get<EvolutionChainDto>(url);
-  return data;
-}
