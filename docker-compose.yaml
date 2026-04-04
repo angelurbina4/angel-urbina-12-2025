@@ -1,0 +1,6 @@
+services:
+  pokemon-app:
+    build: .
+    image: pokemon-app:latest
+    ports:
+      - "8080:80"
